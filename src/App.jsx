@@ -2,6 +2,7 @@ import { useState } from 'react'
 
 import { Button } from './components/Button'
 import { Verify } from './pages/Verify'
+import { Finder } from './pages/Finder'
 
 
 function App() {
@@ -15,7 +16,7 @@ function App() {
         <Button onClick={() => { setVerify(true) }} child={'Find Xpath'} />
       </div>
       <div className='mt-3'>
-        {verify ? <div><Verify /></div> : <div>Verify Xpath</div>}
+        {verify ? <div><Verify /></div> : <div><Finder /></div>}
       </div>
     </div>
   )
